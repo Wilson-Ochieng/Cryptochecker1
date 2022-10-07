@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import "./App.css";
+import Coin from "./Coin"
 
-function App({ handleChange }) {
+function App() {
 
 
 
@@ -30,6 +31,7 @@ function App({ handleChange }) {
 
     
   return (
+    
     <div className="App">
       <div className="coin-app">
         <div className="coin-search">
