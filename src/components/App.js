@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Coin from "./Coin";
 
-function App({}) {
+function App({ }) {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
@@ -20,14 +20,12 @@ function App({}) {
 
   function handleChange(e) {
     setSearch(e.target.value);
-  }
+  };
 
-  const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(search.toLowerCase())
-  );
-  return (
+  const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
+ return (
     <div className="coin-app">
-      <div className="coin-search">
+            <div className="coin-search">
         <h1 className="coin-text">CryptoChecker</h1>
         <form>
           <input
