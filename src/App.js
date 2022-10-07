@@ -12,7 +12,10 @@ function App() {
             type="text"
             placeholder="Search"
             className="coin-input"
-            onChange={handleChange}/>
+              onChange={handleChange} />
+        </form>
+        </div>
+        </div>
      
     </div>
   );
