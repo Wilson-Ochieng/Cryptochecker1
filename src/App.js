@@ -24,6 +24,11 @@ function App({ handleChange }) {
   function handleChange(e) {
     setSearch(e.target.value);
   };
+
+ const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
+
+
+    
   return (
     <div className="App">
       <div className="coin-app">
