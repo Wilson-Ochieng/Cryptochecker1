@@ -1,13 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "./App.css";
-import Coin from "./Coin"
+import React from "react";
+import Coin from "./Coin";
 
-function App() {
-
-
-
-  function App({ }) {
+function App({}) {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
@@ -24,28 +20,26 @@ function App() {
 
   function handleChange(e) {
     setSearch(e.target.value);
-  };
+  }
 
- const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
-
-
-    
+  const filteredCoins = coins.filter((coin) =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
+  );
   return (
-    
-    <div className="App">
-      <div className="coin-app">
-        <div className="coin-search">
-          <h1 className="coin-text">CryptoChecker</h1>
-          <form>
-            <input
-              type="text"
-              placeholder="Search"
-              className="coin-input"
-              onChange={handleChange}
-            />
-          </form>
-        </div>
-         {filteredCoins.map((coin) => {
+    <div className="coin-app">
+      <div className="coin-search">
+        <h1 className="coin-text">CryptoChecker</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Search"
+            className="coin-input"
+            onChange={handleChange}
+          />
+        </form>
+      </div>
+
+      {filteredCoins.map((coin) => {
         return (
           <Coin
             key={coin.id}
@@ -59,7 +53,6 @@ function App() {
           />
         );
       })}
-      </div>
     </div>
   );
 }
