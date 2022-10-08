@@ -1,5 +1,5 @@
 # Getting Started with CryptoTracker App
-This is an App assits Crypto currency traders and miners to find  the latest crypto currency information to guide them in making  informed  investment decisions.
+This is an App that  assists Crypto currency traders and miners to find  the latest crypto currency information to guide them in making  informed  investment decisions.
 
 ## Running the project
 
