@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Coin from './Coin';
 import "./Coin.css"
+import { Link } from "react-router-dom";
 
 
 function CryptoTrack() {
@@ -33,7 +34,7 @@ function handleChange(e) {
     <div className="coin-app">
       <div className="coin-search">
         <h1 className="coin-text">CryptoTracker</h1>
-               <form>
+        <form>
           <input
             type="text"
             placeholder="Search"
@@ -41,6 +42,8 @@ function handleChange(e) {
             onChange={handleChange}
           />
         </form>
+        <Link to="about">About</Link>
+        <Link to="Blog">Blog</Link>
       </div>
 
       {filteredCoins.map((coin) => {
@@ -56,10 +59,8 @@ function handleChange(e) {
             volume={coin.total_volume}
           />
         );
-
       })}
     </div>
   );
 }
-
 export default CryptoTrack;

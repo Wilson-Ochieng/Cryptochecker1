@@ -5,6 +5,7 @@ import Login from "./Login"
 import Services from "./Services"
 import About from "./About"
 import Blog from "./Blog"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
