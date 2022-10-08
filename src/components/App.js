@@ -3,10 +3,13 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Coin from "./Coin";
 import MediaQuery from "react-responsive";
+import Home from "./Home";
+import Login from "./Login"
+import Services from "./Services"
 
 
 function App({ }) {
-  const[chart,setChart]=useState([])
+  const [page, setPage] = useState("/projects");
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
@@ -21,19 +24,27 @@ function App({ }) {
       .catch((error) => console.log(error));
   }, []);
   
-useEffect(() => {
-  axios
-    .get(
-      "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=USD&days=7"
-    )
 
-    .then((res) => {
-      setChart(res.data);
-    })
-    .catch((error) => console.log(error));
-}, []);
-  
-
+function getCurrentPage() {
+  switch (page) {
+    case "/":
+      return <Home />;
+    case "/about":
+      return <About />;
+    case "/login":
+      return <Login />;
+    case "/services":
+      return <Services />;
+    default:
+      return <h1>404 not found</h1>;
+  }
+}
+  return (
+    <div>
+      <NavBar onChangePage={setPage} />
+      {getCurrentPage()}
+    </div>
+  );
 
   
    function handleChange(e) {
