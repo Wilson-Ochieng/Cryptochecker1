@@ -7,7 +7,7 @@ const NavBar = () => {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Nav className="me-auto"></Nav>
-          <Navbar.Brand href="#home">Crytotrack</Navbar.Brand>
+          <Navbar.Brand href="#home">Cryptotrack</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
           <Navbar.Collapse id="responsive-navbar-nav"/>
           <Nav className="me-auto">
