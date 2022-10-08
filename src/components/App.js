@@ -13,6 +13,7 @@ import NavBar from "./NavBar";
 function App({}) {
   return (
     <div className="App">
+      {/* Navbar for the App */}
       <NavBar/>
       <Routes>
         <Route path="/" element={<CryptoTrack />} />
