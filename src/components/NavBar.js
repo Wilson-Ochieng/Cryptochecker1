@@ -1,31 +1,31 @@
-import React from "react";
-import "./Coin.css";
+import React from 'react'
 
-function NavBar(onChangePage) {
-  function handleLinkClick(e) {
-    e.preventDefault();
-    onChangePage(e.target.pathname);
-  }
-
+const NavBar = () => {
   return (
-    <nav>
-      <a onClick={handleLinkClick} href="/">
-        CryptoTrack
-      </a>
-      <a onClick={handleLinkClick} href="/about">
-        About
-      </a>
-      <a onClick={handleLinkClick} href="/login">
-        Login
-      </a>
-      <a onClick={handleLinkClick} href="/services">
-        Services
-      </a>
-      <a onClick={handleLinkClick} href="/blog">
-        Blog
-      </a>
-    </nav>
+    <div>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      <br />
+      <Navbar bg="primary" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </div>
   );
 }
 
-export default NavBar;
+export default NavBar
