@@ -15,3 +15,11 @@
   margin-top: 64px;
   color: #fff;
 }
+.coin-search {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
