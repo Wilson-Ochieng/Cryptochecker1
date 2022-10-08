@@ -10,19 +10,19 @@
     align-items: center;
     height: 90 px;
     border-bottom: 1px solid #d7d7d7;
-    width: 1000px;
+    width: 850px;
 }
 
 .coin {
     display: flex;
     align-items: center;
-    padding-right: 30px;
-    min-width: 400px;
+    padding-right: 90px;
+    min-width: 100px;
 }
 
 .coin h1 {
     font-size: 20px;
-    width: 200px;
+    width: 150px;
 }
 
 .coin img {
@@ -33,6 +33,9 @@
 
 .coin-symbol {
     text-transform: uppercase;
+      
+  
+      
 }
 
 .coin-data {
@@ -55,7 +58,7 @@
 }
 
 .coin.percent {
-    width: 100%;
+    width: 10%;
 }
 
 .red {
