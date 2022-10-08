@@ -6,12 +6,14 @@ import Services from "./Services"
 import About from "./About"
 import Blog from "./Blog"
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "./NavBar";
 
 
 
 function App({}) {
   return (
     <div className="App">
+      <NavBar/>
       <Routes>
         <Route path="/" element={<CryptoTrack />} />
         <Route path="about" element={<About />} />
