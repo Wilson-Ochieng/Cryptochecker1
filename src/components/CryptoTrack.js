@@ -3,8 +3,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Coin from './Coin';
 import "./Coin.css"
-import { Link } from "react-router-dom";
-
 
 function CryptoTrack() {
 
