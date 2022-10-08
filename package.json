@@ -1,5 +1,5 @@
 {
-  "name": "cryptoprod",
+  "name": "cryptotracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,5 +39,17 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.19.3"
+  },
+  "description": "This is an App assits Crypto currency traders and miners to find  the latest crypto currency information to guide them in making  informed  investment decisions.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wilson-Ochieng/Cryptochecker1.git"
+  },
+  "author": "Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wilson-Ochieng/Cryptochecker1/issues"
   }
+
 }
