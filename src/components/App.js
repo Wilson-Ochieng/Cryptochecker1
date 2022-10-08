@@ -3,13 +3,15 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Coin from "./Coin";
 import MediaQuery from "react-responsive";
-import Home from "./Home";
+import CryptoTrack from "./CryptoTrack";
 import Login from "./Login"
 import Services from "./Services"
+import About from "./About"
+import NavBar from "./NavBar";
+
 
 
 function App({ }) {
-  const [page, setPage] = useState("/projects");
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
@@ -24,13 +26,15 @@ function App({ }) {
       .catch((error) => console.log(error));
   }, []);
   
-
+  const [page, setPage] = useState("/cryptotrack");
 function getCurrentPage() {
   switch (page) {
     case "/":
-      return <Home />;
+      return <CryptoTrack />;
     case "/about":
       return <About />;
+    case "/cryptotrack":
+      return <CryptoTrack />;
     case "/login":
       return <Login />;
     case "/services":

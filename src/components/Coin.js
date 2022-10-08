@@ -1,8 +1,6 @@
 import React from "react";
 import "./Coin.css";
 import "./App.css";
-import MediaQuery from "react-responsive";
-
 
 function Coin({ name, image, symbol, price, volume, priceChange, marketcap }) {
   
