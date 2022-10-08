@@ -20,6 +20,30 @@ function App({}) {
       .catch((error) => console.log(error));
   }, []);
 
+function About() {
+  return (
+    <div>
+      <h1>This is my about component!</h1>
+    </div>
+  );
+}
+  function Login() {
+    return (
+      <div>
+        <h1>Login</h1>
+        <form>
+          <div>
+            <input type="text" name="username" placeholder="Username" />
+          </div>
+          <div>
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    );
+  }
+  
   function handleChange(e) {
     setSearch(e.target.value);
   }
@@ -55,6 +79,7 @@ function App({}) {
             volume={coin.total_volume}
           />
         );
+
       })}
     </div>
   );
