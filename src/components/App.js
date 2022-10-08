@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+
 import React from "react";
 import CryptoTrack from "./CryptoTrack";
 import Login from "./Login"
@@ -9,7 +10,7 @@ import NavBar from "./NavBar";
 
 
 function App({ }) {
-  const [page, setPage] = useState("/cryptotrack");
+  const [page, setPage] = useState("/");
 function getCurrentPage() {
   switch (page) {
     case "/":
