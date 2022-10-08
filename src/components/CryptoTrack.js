@@ -42,6 +42,7 @@ function handleChange(e) {
             onChange={handleChange}
           />
         </form>
+        
         <Link to="about">About</Link>
         <Link to="Blog">Blog</Link>
       </div>

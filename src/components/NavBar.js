@@ -6,9 +6,10 @@ const NavBar = () => {
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
+          <Nav className="me-auto"></Nav>
           <Navbar.Brand href="#home">Crytotrack</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+          <Navbar.Collapse id="responsive-navbar-nav"/>
           <Nav className="me-auto">
             <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#About">About</Nav.Link>
