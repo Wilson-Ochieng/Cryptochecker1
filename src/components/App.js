@@ -5,13 +5,14 @@ import Coin from "./Coin";
 import MediaQuery from "react-responsive";
 
 
-function App({}) {
+function App({ }) {
+  const[chart,setChart]=useState([])
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=market_cap_desc&per_page=20&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d"
       )
 
       .then((res) => {
@@ -20,7 +21,22 @@ function App({}) {
       .catch((error) => console.log(error));
   }, []);
   
-  function handleChange(e) {
+useEffect(() => {
+  axios
+    .get(
+      "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=USD&days=7"
+    )
+
+    .then((res) => {
+      setChart(res.data);
+    })
+    .catch((error) => console.log(error));
+}, []);
+  
+
+
+  
+   function handleChange(e) {
     setSearch(e.target.value);
   }
 
