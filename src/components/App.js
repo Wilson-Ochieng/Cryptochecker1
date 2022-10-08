@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import React from "react";
 import Coin from "./Coin";
+import MediaQuery from "react-responsive";
+
 
 function App({}) {
   const [coins, setCoins] = useState([]);
@@ -32,6 +34,7 @@ function App({}) {
     <div className="coin-app">
       <div className="coin-search">
         <h1 className="coin-text">CryptoTracker</h1>
+        <MediaQuery minWidth={1224}></MediaQuery>
         <form>
           <input
             type="text"
