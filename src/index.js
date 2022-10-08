@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter} from "react-router-dom";
 import './index.css';
 import App from "../src/components/App"
+import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import CryptoTrack from './components/CryptoTrack';
-const root = ReactDOM.createRoot(
-  
-  document.getElementById("root")
+
+const root = ReactDOM.createRoot(document.getElementById("root")
 );
 root.render(
-  <HashRouter>
+  <BrowserRouter>
     <App />
-  </HashRouter>
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function
