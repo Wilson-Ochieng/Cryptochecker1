@@ -2,8 +2,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import React from "react";
 import Coin from "./Coin";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
 
 function App({}) {
   const [coins, setCoins] = useState([]);
@@ -29,6 +27,8 @@ function App({}) {
   );
 
   return (
+
+    
     <div className="coin-app">
       <div className="coin-search">
         <h1 className="coin-text">CryptoTracker</h1>
