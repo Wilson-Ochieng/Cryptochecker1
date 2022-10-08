@@ -12,7 +12,7 @@ function  NavBar (onChangePage)  {
         <nav>
             <a onClick={handleLinkClick} href="/">CryptoTrack</a>
             <a onClick={handleLinkClick} href="/about">About</a>
-              <a onClick={handleLinkClick} href="/logint">Login</a>
+              <a onClick={handleLinkClick} href="/login">Login</a>
             <a onClick={handleLinkClick} href="/services">Services</a>
         </nav>
 
