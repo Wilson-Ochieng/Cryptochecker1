@@ -20,9 +20,14 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link as={Link} to={"/blog"}>
               Blog
-            </Nav.Link> <Nav.Link as={Link} to={"/services"}>
+            </Nav.Link>
+            <Nav.Link as={Link} to={"/services"}>
               Services
             </Nav.Link>
+            <Nav.Link as={Link} to={"/login"}>
+              Login
+            </Nav.Link>
+            
           </Nav>
         </Container>
       </Navbar>
