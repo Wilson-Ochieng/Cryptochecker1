@@ -47,6 +47,7 @@ function handleChange(e) {
           <Coin
             key={coin.id}
             name={coin.name}
+            marketcaprank={coin.market_cap_rank}
             image={coin.image}
             symbol={coin.symbol}
             marketcap={coin.market_cap}

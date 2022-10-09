@@ -8,14 +8,12 @@ import Blog from "./Blog"
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./NavBar";
 
-
-
 function App({}) {
   return (
     <div className="App">
       {/* Navbar for the App */}
-      <NavBar/>
-      <Routes>
+      <NavBar />
+           <Routes>
         <Route path="/" element={<CryptoTrack />} />
         <Route path="about" element={<About />} />
         <Route path="blog" element={<Blog />} />
