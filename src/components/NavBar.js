@@ -5,7 +5,7 @@ import{Link} from "react-router-dom"
 const NavBar = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar  bg="dark" variant="dark">
         <Container>
           <Nav className="me-auto"></Nav>
           <Navbar.Brand as={Link} to={"/"}>Cryptotrack</Navbar.Brand>
